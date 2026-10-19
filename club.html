@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Киноклуб — After the Credits</title>
+  <meta name="description" content="Запись на встречу киноклуба «Смотрим и разбираем концовки».">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@600;700;800&family=Fira+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">К содержимому</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="index.html">After the Credits</a>
+    <input class="site-nav__check" type="checkbox" id="nav-toggle">
+    <label class="site-nav__toggle" for="nav-toggle">Меню</label>
+    <nav class="site-nav" aria-label="Разделы сайта">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li><a class="site-nav__link" href="twists.html">Финалы</a></li>
+        <li><a class="site-nav__link" href="details.html">Детали</a></li>
+        <li><a class="site-nav__link" href="theories.html">Теории</a></li>
+        <li><a class="site-nav__link" href="villains.html">Злодеи</a></li>
+        <li><a class="site-nav__link" href="time-travel.html">Время</a></li>
+        <li><a class="site-nav__link" href="alt-endings.html">Концовки</a></li>
+        <li><a class="site-nav__link" href="soundtracks.html">Музыка</a></li>
+        <li><a class="site-nav__link" href="directors.html">Режиссёры</a></li>
+        <li><a class="site-nav__link" href="lists.html">Подборки</a></li>
+        <li><a class="site-nav__link" href="club.html" aria-current="page">Киноклуб</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <header class="page-head">
+    <h1 class="page-title">Киноклуб</h1>
+    <p class="page-lede">Встреча «Смотрим и разбираем концовки»: смотрим фильм с неожиданным финалом и обсуждаем, что было спрятано заранее. Оставьте контакты, и мы с вами свяжемся.</p>
+  </header>
+
+  <div class="credit-list">
+    <div class="credit">
+      <div class="credit__role">О встрече</div>
+      <div class="credit__body">
+        <p>Смотрим один фильм из раздела «Неожиданные финалы», затем разбираем детали, теории и альтернативные концовки.</p>
+        <p>Время и место сообщим по почте или по телефону после записи. </p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Запись</h2>
+
+  <form class="form" id="club-form" novalidate>
+    <div class="form__field">
+      <label class="form__label" for="fio">ФИО</label>
+      <input class="form__input" type="text" id="fio" name="fio" autocomplete="name" placeholder="Аскарова Бермет Жоомартовна" aria-describedby="fio-hint fio-error">
+      <p class="form__hint" id="fio-hint">Два или три слова, каждое с заглавной буквы. Дефис допускается.</p>
+      <p class="form__error" id="fio-error" role="alert"></p>
+    </div>
+
+    <div class="form__field">
+      <label class="form__label" for="phone">Номер телефона</label>
+      <input class="form__input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+996 555 123 456" aria-describedby="phone-hint phone-error">
+      <p class="form__hint" id="phone-hint">Формат Кыргызстана: +996 и 9 цифр или 0 и 9 цифр.</p>
+      <p class="form__error" id="phone-error" role="alert"></p>
+    </div>
+
+    <div class="form__field">
+      <label class="form__label" for="email">Почта</label>
+      <input class="form__input" type="email" id="email" name="email" autocomplete="email" placeholder="name@mail.com" aria-describedby="email-hint email-error">
+      <p class="form__hint" id="email-hint">Например, name@mail.com.</p>
+      <p class="form__error" id="email-error" role="alert"></p>
+    </div>
+
+    <button class="form__submit" type="submit">Записаться</button>
+    <p class="form__result" id="form-result" role="status"></p>
+  </form>
+
+</main>
+
+
+<footer class="site-footer">
+  <p class="site-footer__title">After the Credits</p>
+  <nav class="site-footer__links" aria-label="Все страницы">
+    <a href="index.html">Главная</a>
+    <a href="twists.html">Финалы</a>
+    <a href="details.html">Детали</a>
+    <a href="theories.html">Теории</a>
+    <a href="villains.html">Злодеи</a>
+    <a href="time-travel.html">Время</a>
+    <a href="alt-endings.html">Концовки</a>
+    <a href="soundtracks.html">Музыка</a>
+    <a href="directors.html">Режиссёры</a>
+    <a href="lists.html">Подборки</a>
+    <a href="club.html">Киноклуб</a>
+  </nav>
+  <p class="site-footer__note">Учебный проект. На страницах раскрыты концовки фильмов. Все права на фильмы, постеры и фотографии принадлежат правообладателям.</p>
+</footer>
+
+<aside class="stinger">
+  <p class="stinger__label">Вы дочитали до конца. Вот сцена после титров.</p>
+  <p class="stinger__text">Режиссёр мелькает на экране на секунду в большинстве своих картин, чаще всего в первые минуты.</p>
+  <p class="stinger__film">Фильмы Хичкока</p>
+</aside>
+
+<script src="js/club.js"></script>
+</body>
+</html>
