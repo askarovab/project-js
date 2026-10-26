@@ -18,7 +18,7 @@ if (form) {
 
     let allOk = true;
 
-    if (fioRegex.test(fio)) {
+    if (fioRegex.test(fio)) {   
       fioError.textContent = "";
     } else {
       fioError.textContent = "Введите фамилию и имя с заглавных букв";
@@ -140,80 +140,6 @@ if (closeBtn && detailSection) {
 }
 
 document.addEventListener('DOMContentLoaded', loadFilms);
-// function closeDetail() {
-//     if (detailSection) detailSection.classList.add('hidden');
-// }
-
-// if (closeBtn && detailSection) {
-//     closeBtn.addEventListener('click', closeDetail);
-//     detailSection.addEventListener('click', (e) => {
-//         if (e.target === detailSection) closeDetail();   
-//     });
-// }
-// document.addEventListener('keydown', (e) => {
-//     if (e.key === 'Escape') closeDetail();
-// });
-
-// document.addEventListener('DOMContentLoaded', loadFilms);
-
-
-
-
-
-
-
-
-
-
-// const form = document.getElementById("club-form");
-// const fioRegex = /^[А-ЯЁҢҮӨA-Z][а-яёңүөa-z]+(\s[А-ЯЁҢҮӨA-Z][а-яёңүөa-z]+){1,2}$/;
-// const phoneRegex = /^(\+\d{9,15}|0\d{9})$/;
-// const emailRegex = /^[\w.+-]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,}$/i;
-
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault(); 
-//   const fio = document.getElementById("fio").value.trim();
-//   const phone = document.getElementById("phone").value.replace(/[\s-]/g, ""); // без пробелов и дефисов
-//   const email = document.getElementById("email").value.trim();
-
-//   const fioError = document.getElementById("fio-error");
-//   const phoneError = document.getElementById("phone-error");
-//   const emailError = document.getElementById("email-error");
-//   const result = document.getElementById("form-result");
-
-//   let allOk = true; 
-
-//   if (fioRegex.test(fio)) {
-//     fioError.textContent = "";
-//   } else {
-//     fioError.textContent = "Введите фамилию и имя с заглавных букв";
-//     allOk = false;
-//   }
-
-//   if (phoneRegex.test(phone)) {
-//     phoneError.textContent = "";
-//   } else {
-//     phoneError.textContent = "Введите номер с кодом страны, например +996 555 123 456.";
-//     allOk = false;
-//   }
-
-//   if (emailRegex.test(email)) {
-//     emailError.textContent = "";
-//   } else {
-//     emailError.textContent = "Введите почту в формате name@mail.com.";
-//     allOk = false;
-//   }
-
-//   if (allOk) {
-//     result.textContent = "Данные введены верно. Вы записаны!";
-//   } else {
-//     result.textContent = "";
-//   }
-// });
-
-
-
-
 
 
 
