@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@600;700;800&family=Fira+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/modal.css"> -->
 </head>
 <body>
 <a class="skip-link" href="#main">К содержимому</a>
@@ -42,7 +43,7 @@
     <h1 class="page-title">Подборки</h1>
     <p class="page-lede">Двенадцать фильмов по настроению. Выберите, что вам нужно сегодня.</p>
   </header>
-  <div class="filter">
+    <div class="filter">
     <div class="page-tools" role="group" aria-label="Фильтр">
       <label class="chip"><input type="radio" name="filter" value="all" checked>Все</label>
       <label class="chip"><input type="radio" name="filter" value="mind">Сложный сюжет</label>
@@ -51,127 +52,14 @@
       <label class="chip"><input type="radio" name="filter" value="time">Про время</label>
     </div>
 
-    <div class="credit-list">
-      <div class="credit" data-tags="mind">
-        <div class="credit__role">
-          Помни
-          <span class="credit__meta">2000, Кристофер Нолан</span>
-          <span class="cover" style="--hue:350"><span class="cover__label">Помни</span><span class="cover__img" style="background-image:url(img/posters/memento.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Герой теряет кратковременную память, а фильм идёт задом наперёд.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="mind">
-        <div class="credit__role">
-          Малхолланд Драйв
-          <span class="credit__meta">2001, Дэвид Линч</span>
-          <span class="cover" style="--hue:1"><span class="cover__label">Малхолланд Драйв</span><span class="cover__img" style="background-image:url(img/posters/mulholland-drive.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Детектив, который распадается на сны и не склеивается обратно.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="mind time">
-        <div class="credit__role">
-          Донни Дарко
-          <span class="credit__meta">2001, Ричард Келли</span>
-          <span class="cover" style="--hue:193"><span class="cover__label">Донни Дарко</span><span class="cover__img" style="background-image:url(img/posters/donnie-darko.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Подросток видит гигантского кролика, который называет срок конца света.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="mind time">
-        <div class="credit__role">
-          Когерентность
-          <span class="credit__meta">2013, Джеймс Уорд Байркит</span>
-          <span class="cover" style="--hue:68"><span class="cover__label">Когерентность</span><span class="cover__img" style="background-image:url(img/posters/coherence.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Ужин восьми друзей в ночь, когда над Землёй пролетает комета.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="time sad">
-        <div class="credit__role">
-          Прибытие
-          <span class="credit__meta">2016, Дени Вильнёв</span>
-          <span class="cover" style="--hue:172"><span class="cover__label">Прибытие</span><span class="cover__img" style="background-image:url(img/posters/arrival.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Лингвист учит язык инопланетян, и вместе с ним меняется её восприятие времени.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="sad mind">
-        <div class="credit__role">
-          Вечное сияние чистого разума
-          <span class="credit__meta">2004, Мишель Гондри</span>
-          <span class="cover" style="--hue:227"><span class="cover__label">Вечное сияние чистого разума</span><span class="cover__img" style="background-image:url(img/posters/eternal-sunshine.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Двое решают стереть память друг о друге, а потом пытаются спасти воспоминания.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="scary">
-        <div class="credit__role">
-          Другие
-          <span class="credit__meta">2001, Алехандро Аменабар</span>
-          <span class="cover" style="--hue:190"><span class="cover__label">Другие</span><span class="cover__img" style="background-image:url(img/posters/the-others.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Мать с двумя детьми живёт в доме с вечно задёрнутыми шторами: детям нельзя на свет.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="scary">
-        <div class="credit__role">
-          Нечто
-          <span class="credit__meta">1982, Джон Карпентер</span>
-          <span class="cover" style="--hue:261"><span class="cover__label">Нечто</span><span class="cover__img" style="background-image:url(img/posters/the-thing.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Полярная станция, где один из людей может быть не человеком.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="mind">
-        <div class="credit__role">
-          Из машины
-          <span class="credit__meta">2014, Алекс Гарленд</span>
-          <span class="cover" style="--hue:43"><span class="cover__label">Из машины</span><span class="cover__img" style="background-image:url(img/posters/ex-machina.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Программист проверяет, есть ли сознание у андроида.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="sad">
-        <div class="credit__role">
-          Новый кинотеатр «Парадизо»
-          <span class="credit__meta">1988, Джузеппе Торнаторе</span>
-          <span class="cover" style="--hue:142"><span class="cover__label">Новый кинотеатр «Парадизо»</span><span class="cover__img" style="background-image:url(img/posters/cinema-paradiso.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Режиссёр вспоминает киномеханика, который научил его любить кино.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="scary mind">
-        <div class="credit__role">
-          Чёрный лебедь
-          <span class="credit__meta">2010, Даррен Аронофски</span>
-          <span class="cover" style="--hue:252"><span class="cover__label">Чёрный лебедь</span><span class="cover__img" style="background-image:url(img/posters/black-swan.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Балерина репетирует главную партию и перестаёт отличать себя от роли.</p>
-        </div>
-      </div>
-      <div class="credit" data-tags="sad">
-        <div class="credit__role">
-          Она
-          <span class="credit__meta">2013, Спайк Джонз</span>
-          <span class="cover" style="--hue:104"><span class="cover__label">Она</span><span class="cover__img" style="background-image:url(img/posters/her.jpg)"></span></span>
-        </div>
-        <div class="credit__body">
-          <p>Одинокий мужчина влюбляется в голос операционной системы.</p>
-        </div>
-      </div>
+    <div class="credit-list" id="film-list"></div>
+  </div>
+
+  <!-- Модальное окно с подробностями -->
+  <div class="modal hidden" id="detail-section">
+    <div class="modal__card">
+      <button class="modal__close" id="close-btn" type="button" aria-label="Закрыть">&times;</button>
+      <div id="detail-card"></div>
     </div>
   </div>
 
@@ -192,7 +80,7 @@
     <a href="lists.html">Подборки</a>
     <a href="club.html">Киноклуб</a>
   </nav>
- 
+  
 </footer>
 
 <aside class="stinger">
@@ -201,5 +89,15 @@
   <p class="stinger__film">Сияние</p>
 </aside>
 
+<script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
